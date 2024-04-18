@@ -1,6 +1,6 @@
 # Hey Emacs, this is a -*- makefile -*-
 #
-# WinAVR makefile written by Eric B. Weddington, Jörg Wunsch, et al.
+# WinAVR makefile written by Eric B. Weddington, Jï¿½rg Wunsch, et al.
 # Released to the Public Domain
 # Please read the make user manual!
 #
@@ -36,6 +36,8 @@
 # - DEPFLAGS according to Eric Weddingtion's fix (avrfreaks/gcc-forum)
 # - F_OSC Define in CFLAGS and AFLAGS
 
+# mrehkopf 2024/01
+# tweak avrdude calls to program from ELF directly, including fuses
 
 # MCU name
 MCU = atmega48pa
