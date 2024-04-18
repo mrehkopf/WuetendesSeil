@@ -53,7 +53,9 @@
 
  center button:
      - push: toggle manual/auto input select
-     - hold: toggle SCART input illumination
+
+ left+right button:
+     - push simultaneously: toggle SCART input illumination
 
  left/right button:
      - manual mode: select input
