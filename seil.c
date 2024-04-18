@@ -20,7 +20,7 @@
    HYDRA v1 CFW by ikari_01 <otakon@gmx.net>
    Features:
    * MANUAL input selection (press middle button to toggle)
-   * fast input seeking, no running light bullshit
+   * fast input seeking, no running light
    * LEDs are OFF during seeking, only the input found will be illuminated
    * LED PWM disabled to eliminate humming noise in the audio output
    * 2s input loss tolerance (to avoid seeking on console reset)
