@@ -12,7 +12,7 @@
 #define LOST_THRES 120
 #define SYNC_THRES 240
 
-/* 
+/*
 
    W Ü T E N D E S   S E I L
    =========================
