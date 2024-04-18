@@ -335,11 +335,21 @@ ISR(INT0_vect) {
 }
 
 ISR(TIMER0_OVF_vect, ISR_BLOCK) {
-  /* gets triggered periodically */
+  /* gets triggered periodically:
+   * F_CPU           = 8 MHz
+   * Timer prescaler = 8
+   * Timer period    = 256
+   * => Frequency: 8/8/256 ~= 3.9kHz */
   update_debounce_buf();
   tick_cnt = (tick_cnt + 1) & 0x1f;
+  // every 32 ticks: update LEDs and inputs
   if(!tick_cnt) {
-    // every 32 ticks: update LEDs
+    /*
+     * briefly activate both inputs before switching to new input;
+     * while make-before-break switching should generally be frowned upon,
+     * with this hardware it helps greatly reduce clicking and popping when
+     * switching inputs
+     */
     prev_input = p3;
     p3=p2;
     p2=p1;
