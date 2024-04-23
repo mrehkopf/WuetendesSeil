@@ -13,14 +13,16 @@ LEDs actually introduced a humming noise in the audio lines.
 Extension boards (Hydra "HEADS") should be detected and utilized automatically
 but are entirely untested.
 
-## Features: ##
+## Features ##
+
 * MANUAL input selection (press middle button to toggle)
 * fast input seeking, no running light; no ping-pong search direction
 * LEDs are OFF during seeking, only the input found will be illuminated
 * LED PWM disabled to eliminate humming noise in the audio output
 * 2s input loss tolerance (to avoid seeking on console reset)
 
-## Usage: ##
+## Usage ##
+
 * Middle button: toggle auto / manual input selection
 * Left button:
   * Auto selection: change direction of input search
