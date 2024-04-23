@@ -8,7 +8,7 @@ running light.
 While the LED PWM fading effect is very nice to look at for a while
 it quickly got annoying in my opinion, it slowed down input search solely
 for the purpose of fading the LEDs, and the PWM switching of the
-LEDs actually introduced a humming noise in the audio lines.
+LEDs actually introduced a buzzing noise in the audio lines.
 
 Extension boards (Hydra "HEADS") should be detected and utilized automatically
 but are entirely untested.
@@ -18,7 +18,7 @@ but are entirely untested.
 * MANUAL input selection (press middle button to toggle)
 * fast input seeking, no running light; no ping-pong search direction
 * LEDs are OFF during seeking, only the input found will be illuminated
-* LED PWM disabled to eliminate humming noise in the audio output
+* LED PWM disabled to eliminate buzzing noise in the audio output
 * 2s input loss tolerance (to avoid seeking on console reset)
 
 ## Usage ##
